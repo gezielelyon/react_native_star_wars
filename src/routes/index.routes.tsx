@@ -6,16 +6,22 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
-import {StackPersonages} from './stack.routes';
+import {
+  StackPersonages,
+  StackPlanets,
+  StackFilms,
+  StackSpecies,
+  StackVehicles,
+  StackStarships,
+} from './stack.routes';
 
 const DrawerInstance = createDrawerNavigator();
 
 const Routes: React.FC = () => (
   <DrawerInstance.Navigator
-    screenOptions={{}}
     drawerType="slide"
     drawerStyle={{
-      width: '50%',
+      width: '60%',
       backgroundColor: '#231c2e',
       borderRightWidth: 1,
       borderRightColor: '#3a3049',
@@ -25,12 +31,16 @@ const Routes: React.FC = () => (
       inactiveBackgroundColor: '#231c2e',
       inactiveTintColor: '#aaa0bb',
       activeTintColor: '#8553f1',
+      labelStyle: {
+        fontFamily: 'CaveatBrush-Regular',
+        fontSize: 20,
+      },
     }}
     overlayColor="1">
     <DrawerInstance.Screen
       name="StackPersonages"
       options={{
-        title: 'Personagem',
+        title: 'Personagens',
         drawerIcon: () => <FontAwesome name="user" color="#8553f1" size={24} />,
       }}
       component={StackPersonages}
@@ -42,7 +52,7 @@ const Routes: React.FC = () => (
         title: 'Planetas',
         drawerIcon: () => <Ionicons name="planet" color="#8553f1" size={24} />,
       }}
-      component={StackPersonages}
+      component={StackPlanets}
     />
 
     <DrawerInstance.Screen
@@ -53,16 +63,16 @@ const Routes: React.FC = () => (
           <MaterialCommunityIcons name="movie" color="#8553f1" size={24} />
         ),
       }}
-      component={StackPersonages}
+      component={StackFilms}
     />
 
     <DrawerInstance.Screen
       name="StackSpecies"
       options={{
-        title: 'Spécies',
+        title: 'Espécies',
         drawerIcon: () => <FontAwesome5 name="dog" color="#8553f1" size={24} />,
       }}
-      component={StackPersonages}
+      component={StackSpecies}
     />
 
     <DrawerInstance.Screen
@@ -73,16 +83,18 @@ const Routes: React.FC = () => (
           <FontAwesome5 name="car-alt" color="#8553f1" size={24} />
         ),
       }}
-      component={StackPersonages}
+      component={StackVehicles}
     />
 
     <DrawerInstance.Screen
       name="StackStarShips"
       options={{
-        title: 'NaveS Estelar',
-        drawerIcon: () => <FontAwesome name="star" color="#8553f1" size={24} />,
+        title: 'Naves Estelares',
+        drawerIcon: () => (
+          <FontAwesome name="rocket" color="#8553f1" size={24} />
+        ),
       }}
-      component={StackPersonages}
+      component={StackStarships}
     />
   </DrawerInstance.Navigator>
 );

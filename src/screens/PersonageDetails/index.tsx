@@ -1,23 +1,13 @@
 import React, {useState} from 'react';
-import {useNavigation} from '@react-navigation/native';
+
+import IPersonageDTO from '../../dtos/IPersonageDTO';
 
 import {Container, ScrolView, Title, BoxInfoEspecific, Name} from './styles';
 
-interface IPersonageProps {
-  name: string;
-  height: string;
-  mass: string;
-  hair_color: string;
-  skin_color: string;
-  eye_color: string;
-  birth_year: string;
-  gender: string;
-}
-
 const PersonageDetails: React.FC = ({route}) => {
   const {value} = route.params;
-  const [personage, setPersonage] = useState<IPersonageProps>(
-    value || ({} as IPersonageProps),
+  const [personage, setPersonage] = useState<IPersonageDTO>(
+    value || ({} as IPersonageDTO),
   );
 
   return (

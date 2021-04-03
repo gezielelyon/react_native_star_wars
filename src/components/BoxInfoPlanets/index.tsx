@@ -1,16 +1,16 @@
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 
-import IPersonageDTO from '../../dtos/IPersonageDTO';
+import IPlanetDTO from '../../dtos/IPlanetDTO';
 
 import {Container, Name, BoxInfoDetails, Description} from './styles';
 
 interface IBoxInfoProps {
   screenName: string;
-  values: IPersonageDTO;
+  values: IPlanetDTO;
 }
 
-const BoxInfoPersonages: React.FC<IBoxInfoProps> = ({screenName, values}) => {
+const BoxInfoPlanets: React.FC<IBoxInfoProps> = ({screenName, values}) => {
   const navigation = useNavigation();
 
   return (
@@ -22,12 +22,13 @@ const BoxInfoPersonages: React.FC<IBoxInfoProps> = ({screenName, values}) => {
       }}>
       <Name>{values.name}</Name>
       <BoxInfoDetails>
-        <Description>Altura: {values.height}cm</Description>
-        <Description>Peso: {values.mass}Kg</Description>
-        <Description>Nascimento: {values.birth_year}</Description>
+        <Description>Horas por dia: {values.rotation_period} horas</Description>
+        <Description numberOfLines={1} style={{maxWidth: 150}}>
+          Dias por ano: {values.orbital_period} dias
+        </Description>
       </BoxInfoDetails>
     </Container>
   );
 };
 
-export default BoxInfoPersonages;
+export default BoxInfoPlanets;

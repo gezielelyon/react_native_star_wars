@@ -1,16 +1,16 @@
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 
-import IPersonageDTO from '../../dtos/IPersonageDTO';
+import ISpecieDTO from '../../dtos/ISpecieDTO';
 
 import {Container, Name, BoxInfoDetails, Description} from './styles';
 
 interface IBoxInfoProps {
   screenName: string;
-  values: IPersonageDTO;
+  values: ISpecieDTO;
 }
 
-const BoxInfoPersonages: React.FC<IBoxInfoProps> = ({screenName, values}) => {
+const BoxInfoSpecies: React.FC<IBoxInfoProps> = ({screenName, values}) => {
   const navigation = useNavigation();
 
   return (
@@ -22,12 +22,11 @@ const BoxInfoPersonages: React.FC<IBoxInfoProps> = ({screenName, values}) => {
       }}>
       <Name>{values.name}</Name>
       <BoxInfoDetails>
-        <Description>Altura: {values.height}cm</Description>
-        <Description>Peso: {values.mass}Kg</Description>
-        <Description>Nascimento: {values.birth_year}</Description>
+        <Description>Classificação: {values.classification}</Description>
+        <Description>Designação: {values.designation}</Description>
       </BoxInfoDetails>
     </Container>
   );
 };
 
-export default BoxInfoPersonages;
+export default BoxInfoSpecies;

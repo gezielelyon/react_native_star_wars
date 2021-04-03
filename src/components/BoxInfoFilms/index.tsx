@@ -1,16 +1,16 @@
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 
-import IPersonageDTO from '../../dtos/IPersonageDTO';
+import IFilmDTO from '../../dtos/IFilmDTO';
 
 import {Container, Name, BoxInfoDetails, Description} from './styles';
 
 interface IBoxInfoProps {
   screenName: string;
-  values: IPersonageDTO;
+  values: IFilmDTO;
 }
 
-const BoxInfoPersonages: React.FC<IBoxInfoProps> = ({screenName, values}) => {
+const BoxInfoFilms: React.FC<IBoxInfoProps> = ({screenName, values}) => {
   const navigation = useNavigation();
 
   return (
@@ -20,14 +20,12 @@ const BoxInfoPersonages: React.FC<IBoxInfoProps> = ({screenName, values}) => {
           value: values,
         });
       }}>
-      <Name>{values.name}</Name>
+      <Name>{values.title}</Name>
       <BoxInfoDetails>
-        <Description>Altura: {values.height}cm</Description>
-        <Description>Peso: {values.mass}Kg</Description>
-        <Description>Nascimento: {values.birth_year}</Description>
+        <Description>Diretor: {values.director}</Description>
       </BoxInfoDetails>
     </Container>
   );
 };
 
-export default BoxInfoPersonages;
+export default BoxInfoFilms;
