@@ -1,7 +1,7 @@
-[![GitHub issues](https://img.shields.io/github/issues/oprogramadornordestino/AppStarWars)](https://github.com/oprogramadornordestino/AppStarWars/issues)
-[![GitHub forks](https://img.shields.io/github/forks/oprogramadornordestino/AppStarWars)](https://github.com/oprogramadornordestino/AppStarWars/network)
-[![GitHub stars](https://img.shields.io/github/stars/oprogramadornordestino/AppStarWars)](https://github.com/oprogramadornordestino/AppStarWars/stargazers)
-[![GitHub license](https://img.shields.io/github/license/oprogramadornordestino/AppStarWars)](https://github.com/oprogramadornordestino/AppStarWars)
+[![GitHub issues](https://img.shields.io/github/issues/programador404/AppStarWars)](https://github.com/programador404/AppStarWars/issues)
+[![GitHub forks](https://img.shields.io/github/forks/programador404/AppStarWars)](https://github.com/programador404/AppStarWars/network)
+[![GitHub stars](https://img.shields.io/github/stars/programador404/AppStarWars)](https://github.com/programador404/AppStarWars/stargazers)
+[![GitHub license](https://img.shields.io/github/license/programador404/AppStarWars)](https://github.com/programador404/AppStarWars)
 # Desafio App Star Wars 🚀
 Este desafio foi proporcionado pelo [Bruno](https://www.instagram.com/codar.me/?hl=pt) da [Setta.co](https://setta.co/). Desde já quero agredecer por esse desafio!! Foi divertido realizá-lo!!
 
