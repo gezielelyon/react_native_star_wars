@@ -1,20 +1,19 @@
-[![GitHub issues](https://img.shields.io/github/issues/programador404/AppStarWars)](https://github.com/programador404/AppStarWars/issues)
-[![GitHub forks](https://img.shields.io/github/forks/programador404/AppStarWars)](https://github.com/programador404/AppStarWars/network)
-[![GitHub stars](https://img.shields.io/github/stars/programador404/AppStarWars)](https://github.com/programador404/AppStarWars/stargazers)
-[![GitHub license](https://img.shields.io/github/license/programador404/AppStarWars)](https://github.com/programador404/AppStarWars)
+[![GitHub issues](https://img.shields.io/github/issues/programador404/AppStarWars)](https://github.com/programador404/react_native_star_wars/issues)
+[![GitHub forks](https://img.shields.io/github/forks/programador404/AppStarWars)](https://github.com/programador404/react_native_star_wars/network)
+[![GitHub stars](https://img.shields.io/github/stars/programador404/AppStarWars)](https://github.com/programador404/react_native_star_wars/stargazers)
+[![GitHub license](https://img.shields.io/github/license/programador404/AppStarWars)](https://github.com/programador404/react_native_star_wars)
 
-# React-Native App Star Wars 🚀
-Este desafio foi proporcionado pelo [Bruno](https://www.instagram.com/codar.me/?hl=pt) da [Setta.co](https://setta.co/). Desde já quero agredecer por esse desafio!! Foi divertido realizá-lo!!
+# React native Star Wars 🚀
+This project was created in honor of Star Wars characters.
 
-## Tecnologias usadas no desafio:
-* Javascript (linguagem)
-* Typescript (tipagem)
-* React-Native (Biblioteca de componentização)
-* [Swapi](https://swapi.dev/) (Api do Star Wars)
-* Eslint, Prettier e Editor config (Padronização do código)
+## Technologies
+* Javascript (Language)
+* Typescript (Typing)
+* React-Native (Mobile development library)
+* [Swapi](https://swapi.dev/) (Star Wars's API)
+* Eslint, Prettier e Editor config (Code standardization)
 
 
-## Assets criados como base:
-![Personagens](https://user-images.githubusercontent.com/48457700/113476707-846f1180-9453-11eb-9e48-664539c7214f.png)
-
-![Pagamento](https://user-images.githubusercontent.com/48457700/113476722-951f8780-9453-11eb-9dc5-38c8d9ddeadd.png)
+## Images
+![Characters](https://user-images.githubusercontent.com/48457700/113476707-846f1180-9453-11eb-9e48-664539c7214f.png)
+![Payment](https://user-images.githubusercontent.com/48457700/113476722-951f8780-9453-11eb-9dc5-38c8d9ddeadd.png)
