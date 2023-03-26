@@ -31,8 +31,8 @@ The technologies used on the project development are listed below.
 
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [Typescript](https://www.typescriptlang.org/)
-* [React-Native](https://reactnative.dev/)
-* [Swapi](https://swapi.dev/)
+- [React Native](https://reactnative.dev/)
+- [Swapi](https://swapi.dev/)
 
 ## **Images**
 ![Characters](https://user-images.githubusercontent.com/48457700/113476707-846f1180-9453-11eb-9e48-664539c7214f.png)
